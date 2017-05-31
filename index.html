@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dbooks-New books are always better than newfeeds</title>
+		<meta charset="UTF-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="google-signin-client_id" content="1061583598684-o4lcg8ml7dc02aej3h591gu9qd237gbi.apps.googleusercontent.com">
+		<link rel="shortcut icon" type="image/x-icon" href="/icon/favicon/Dbooks-favicon.ico">
+		<link rel="stylesheet" href="css/floating-element.css" >
+		<link rel="stylesheet" href="css/fundamental.css">
+		<link rel="stylesheet" href="css/header.css" >
+		<link rel="stylesheet" href="css/content.css">
+		<link rel="stylesheet" href="css/footer.css" >
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="/js/thirdPartyLib.js" defer></script>
+		<script src="/js/constant.js" defer></script>
+		<script src="/js/screenHandler.js" defer></script>
+		<script src="/js/suggestionGrabber.js" defer></script>
+		<script src="/js/eventHandler.js" defer></script>
+	</head>
+	<body onload="onLoad()" onresize="onResize()">
+		<div id="floating-element">
+			<div id="bounding-bar">
+				<p id="shoppin-bar-title">Your shopping basket</p>
+				<img src="/icon/cart_bar/shopping_basket.png">
+			</div>
+			<div id="item-list">
+				<table id="item-table">
+					<tr>
+						<th>Mã sách</th>
+						<th>Phương thức</th>
+						<th>Đơn giá</th>
+						<th>Số lượng</th>
+						<th></th>
+						</tr>
+				</table> 
+			</div>
+			<button type="button" onclick="">Tính tiền</button>
+		</div>
+		<div id="header">
+			<div id="sign-regis">
+				<ul id="sign-regis-ul" class="horizontal">
+					<li>
+						<h2>
+							<img src="/icon/signin-register/sign-in.png"/>
+							<a class="link-button" href="javascript:onSigninClickShow();">Đăng nhập</a>
+						</h2>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<h2>
+							<img src="/icon/signin-register/register.png"/>
+							<a class="link-button" href="javascript:onRegisterClickShow();">Đăng kí</a>
+						</h2>
+					</li>
+				</ul>	
+				<div id="sign-board">
+					<button class="closebt" onclick="onSigninClickHide()">X</button>
+					<p class="logo">DBOOK</p>
+					<form method="post" id="sign-form">
+						<input type="text" id="sign_email" placeholder="Nhập Email"></input>
+						<input type="password" id="password" placeholder="Mật khẩu"></input>
+						<div id="dbook-signin">
+							<a href="#">Quên tài khoản</a>
+							<button type="submit">Đăng nhập</button>
+						</div>
+						<div id="thridPartyLoginButton">
+							<div id="fb-log-button" class="fb-login-button" data-size="large" data-show-faces="false" data-auto-logout-link="true"></div>
+							<div class="g-signin2" data-onsuccess="onSignIn"></div>
+						</div>
+					</form>
+				</div>
+				<div id="regis-board">
+					<button class="closebt" onclick="onRegisterClickHide()">X</button>
+					<p class="logo">DBOOK</p>
+					<form method="post" id="regis-form">
+						<input type="text" id="email" placeholder="Nhập Email của bạn"></input>
+						<input type="password" id="password" placeholder="Mật khẩu"></input>
+						<input type="password" id="retypepassword" placeholder="Nhập lại mật khẩu"></input>
+						<div id="dbook-regis">
+							<button type="submit">Đăng kí</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="nav-bar">
+				<h1  id="logo">
+					<a class="link-button" href="/">DBOOK</a>
+				</h1>
+				<div id="nav-bar-item-enclose">
+					<ul class="horizontal">
+						<li>
+							<h2>
+								<a class="link-button" href="javascript:alert('kho sach');">KHO SÁCH</a>
+							</h2>
+						</li>					
+						<li>
+							<h2>
+								<a class="link-button" href="javascript:alert('kho sach');">BẢN ĐỒ</a>
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a class="link-button" href="javascript:alert('kho sach');">THƯƠNG LƯỢNG</a>
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a class="link-button" href="javascript:alert('kho sach');">BLOG</a>
+							</h2>
+						</li>					
+						<li class="breaker">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="search-bar">
+				<div id="inner-search-bar">
+					<div id="magnifier"></div>
+					<div id="SbSgBCover">
+						<input type="text" id="search-box" placeholder="WHAT ARE YOU READING?" autocomplete="off" autofocus>
+						<div id="SgLBox"></div>
+					</div>
+				</div>
+				<div id="SgListBG">
+					<div id="cover-price">
+					</div>
+				</div>
+			</div>
+			<div id="book-description-bar">
+				<h4 id="book-description-title">Thông tin sách</h4>
+				<button id="book-description-close" onclick="hideDescriptionBar()">X</button>
+				<div id="description-bar-option">
+					<button id="rent-new" onclick="onClickButtonChoice(0)">Thuê mới</button>
+					<button id="rent-old" onclick="onClickButtonChoice(1)">Thuê cũ</button>
+					<button id="buy-new" onclick="onClickButtonChoice(2)">Mua mới</button>
+					<button id="buy-old" onclick="onClickButtonChoice(3)">Mua cũ</button>
+				</div>
+				<ul id="description-bar-infor">
+					<li>
+						<h4>Thể loại:</h4>
+						<p id="des-category"></p>
+					</li>
+					<li>
+						<h4>Tác giả:</h4>
+						<p id="des-author"></p>
+					</li>
+					<li>
+						<h4>Tóm tắt nội dung:</h4>
+						<p id="des-brief"></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="infor-bar">
+				<ul class="horizontal">
+					<li>
+						<h2>
+							<a href="javascript:window.alert('about');">ABOUT</a>
+						</h2>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<h2>
+							<a href="javascript:window.alert('contact');">CONTACT</a>
+						</h2>
+					</li>
+					<li>
+						<span>|</span>
+					</li>
+					<li>
+						<h2>
+							<a href="javascript:window.alert('copyright');">COPYRIGHT</a>
+						</h2>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</body>
+</html>

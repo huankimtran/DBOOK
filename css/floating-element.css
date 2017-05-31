@@ -1,0 +1,99 @@
+#floating-element{
+	position:fixed;
+	width:25%;
+	top:calc(50% - 50px);
+	background-color:white;
+	z-index:3;
+	border-radius: 0 0 0 0;
+	transition: all 1s;
+	opacity:0.9;
+	left:-25%;
+}
+#floating-element:hover{
+	left:0;	
+}
+/*
+#cover-price{
+	position:absolute;	
+	top:0;
+	left:100%;
+	border-radius:20px;
+	background-color: red;
+}
+#cover-price:hover{
+	width:100px;
+}
+*/
+#bounding-bar{
+	position:relative;
+	background-color:black;
+	width: calc(100% + 2em);
+	border-radius: 0 2em 2em 0;
+}
+#bounding-bar p{
+	color:white;
+	padding:0.5em 3em 0.5em 0.5em;
+	margin:auto;
+	text-align:left;
+	font-weight:bold;
+	font-family:SVN-Effa;
+	font-size:1em;
+	display:inline-block;
+}
+#bounding-bar img{
+	display:inline-block;
+	position:absolute;
+	right:0.5em;
+	width:1.5em;
+	height:1.5em;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+#item-list{
+	height:15em;
+	overflow-y:auto;
+	overflow-x:visible;
+}
+#item-table {
+	width:100%;
+	color:black;
+	text-align:left;
+	font-size:0.75em;
+	border-collapse:collapse;
+}
+
+#item-table tr th{
+	color:white;
+	background-color:black;
+}
+/*
+#item-list table tr:hover{
+	color:white;
+	background-color:black;
+	opacity:0.95;
+}
+#item-list table tr td button{
+	padding:1px;
+}
+#item-list table tr td button:hover{
+	color:black;
+	background-color:white;
+	opacity:0.95;
+}
+*/
+#floating-element button{
+	width:100%;
+	text-align:center;
+	color:white;
+	background-color:black;
+	border: none;
+	padding:10px;
+		font-weight:bold;
+}
+#floating-element button:hover{
+	opacity:0.75;
+}
+#floating-element button:active{
+	opacity:1;
+}

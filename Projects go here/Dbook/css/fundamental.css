@@ -1,0 +1,36 @@
+html, body{
+	family-font: "Times New Roman";
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	width:100%;
+}
+h1.horizontal, h2.horizontal, ul.horizontal li, ul.horizontal li h2{
+	list-style-type: none;
+	display:inline;
+	text-align:center;
+}
+a.link-button:hover{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:visited{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:link{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:active{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+.testing{
+	border:1px solid red;
+}

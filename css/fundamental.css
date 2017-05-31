@@ -1,0 +1,59 @@
+html, body{
+	font-family:SVN-Effa;
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	height:100%;
+}
+body{
+	position:relative;
+	background-color: black;
+	background-image: url("/img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment:fixed;
+	color:white;
+	overflow-x:hidden;
+}
+h1.horizontal, h2.horizontal, ul.horizontal li, ul.horizontal li h2{
+	list-style-type: none;
+	display:inline;
+	text-align:center;
+}
+a.link-button:hover{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:visited{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:link{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+a.link-button:active{
+	background-color:transparent;
+	color: white;
+	text-decoration: none;
+}
+.testing{
+	border:1px solid red;
+}
+.logo{
+	font-family: SVN-Effa;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	text-align:center;
+}
+.closebt{
+	position:absolute;
+	background-color:transparent;
+	color:black;
+	outline:none;
+	border-width: 0;
+}

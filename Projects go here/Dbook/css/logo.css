@@ -1,0 +1,28 @@
+.logo-banner {
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin-left:0px;
+	margin-right:0px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	padding-left: 11px;
+	padding-right: 0px;
+	font-family: SVN-Effa;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	text-align:center;
+}
+#logo-banner a{
+}
+#logo-banner a:hover{
+}
+#logo-banner a:visited{
+}
+#logo-banner a:link{
+}
+#logo-banner a:active{
+}

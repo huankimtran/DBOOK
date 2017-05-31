@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT><BOOK>
+		<BOOK_NAME_ID> Book name id </BOOK_NAME_ID>
+		<BOOK_NAME>Book Name</BOOK_NAME>
+		<CATEGORY>CATEGORY</CATEGORY>
+		<AUTHOR>Author</AUTHOR>
+		<DESCRIPTION>Description</DESCRIPTION>
+		<QUANTATY_TOTAL>total amount</QUANTATY_TOTAL>
+		<QUANTATY_OLD> number of old book</QUANTATY_OLD>
+		<RENTAL_NEW_PRICE>rent new</RENTAL_NEW_PRICE>
+		<RENTAL_OLD_PRICE>rent old</RENTAL_OLD_PRICE>
+		<BUY_NEW_PRICE>buy new book</BUY_NEW_PRICE>
+		<BUY_OLD_PRICE>buy old book</BUY_OLD_PRICE>
+		<IMG_NUMBER>number of image in the book image folder</IMG_NUMBER></BOOK>
+</ROOT>

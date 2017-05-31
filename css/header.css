@@ -1,0 +1,195 @@
+@font-face {
+    font-family: SVN-Agency;
+    src: url("/font/SVN-Agency.ttf") format('truetype');
+}
+@font-face {
+    font-family: SVN-Effa;
+    src: url("/font/SVN-Effra.ttf") format('truetype');
+}
+#header {
+	position:relative;
+	height:200px;
+}
+#sign-regis{
+	position:relative;
+	background-color: transparent;
+	height:4em;
+}
+#sign-regis ul{
+	position:relative;
+	margin:0;
+	padding: 1em 50px 1em 1em;
+	text-align:right;
+}
+#sign-regis ul li{
+	color:white;
+}
+#sign-regis ul li h2{
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	font-family: SVN-Effa;
+}
+#sign-regis ul li h2 img{
+	height:1em;
+}
+#sign-regis ul li span{
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: normal;
+	font-family: SVN-Effa;
+}
+#sign-board{
+	position:absolute;
+	right:0;
+	display:none;
+	width:25%;
+	background-color:white;
+	margin:0;
+	z-index:3;
+	padding:0;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.5);
+	opacity:0;
+	border-radius: 1em 0 0 1em;
+	transition: all 0.5s;
+}
+#sign-board button{
+	right:0;
+	font-size:1em;
+}
+#sign-board p{
+	color:black;
+	font-weight:bold;
+	margin:20px;
+}
+#sign-form{
+	margin: 0;
+	padding:20px 10%;
+}
+#sign-form input{
+	width:100%;
+	font-size:1em;
+	margin: 0.25em 0;
+}
+#dbook-signin{
+	position:relative;
+	padding: 0.5em 0 1em 0;
+}
+#dbook-signin button{
+	position:absolute;
+	right:0;
+	border:none;
+	background-color:navy;
+	color:white;
+	height:2em;
+}
+#dbook-signin a{
+	text-align:right;
+	border-color: blue;
+	color: blue;
+}
+#thridPartyLoginButton{
+	position:relative;
+}
+#fb-log-button{
+	position:absolute;
+	right:0;
+}
+#regis-board{
+	position:absolute;
+	right:0;
+	display:none;
+	width:25%;
+	background-color:white;
+	margin:0;
+	z-index:3;
+	padding:0;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.5);
+	border-radius: 1em 0 0 1em;
+	transition: all 0.5s;
+}
+#regis-board button{
+	right:0;
+	font-size:1em;
+}
+#regis-board p{
+	color:black;
+	font-weight:bold;
+	margin:20px;
+}
+#regis-form{
+	margin: 0;
+	padding:30px 10%;
+}
+#regis-form input{
+	width:100%;
+	font-size:1em;
+	margin: 0.25em 0;
+}
+#dbook-regis{
+	position:relative;
+	padding: 0.5em 0 1em 0;
+}
+#dbook-regis button{
+	position:absolute;
+	right:0;
+	border:none;
+	background-color:navy;
+	color:white;
+	height:2em;
+}
+#nav-bar{
+	position:relative;
+	background-color: transparent;
+	overflow:hidden;		`
+}
+#logo{
+	display:inline-block;
+	border: 2px solid white;
+	float:left;
+	margin: 0 20px;
+}
+#logo a{
+	margin:0px;
+	background-color: transparent;
+	color: white;
+	padding:0 0 0 10px;
+	font-family: SVN-Effa;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	text-align:center;
+}
+#nav-bar-item-enclose{
+	position:relative;
+	margin:0;
+	overflow:hidden;
+	top:1.5em;
+}
+#nav-bar-item-enclose ul{
+	position:relative;
+	right:0;
+	margin:0;
+	padding: 0px;
+	text-align:justify;
+}
+#nav-bar-item-enclose ul li{
+	display: inline-block;
+    width: 23%;
+}
+#nav-bar-item-enclose ul li h2 a{
+	font-family: SVN-Agency;
+	font-weight:normal;
+	font-size: 1.2em;
+	padding:10px;
+	margin: 5px 20px;
+	
+}
+#nav-bar-item-enclose ul #breaker {
+	width: 100%;
+    height: 0;
+}
+#background{
+	position:fixed;
+	width:100%;
+	height:100%;
+}

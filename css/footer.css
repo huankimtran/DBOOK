@@ -1,0 +1,33 @@
+#footer{
+	position:relative;
+	text-align:center;
+	padding:20px 0px;
+}
+#infor-bar{
+	position:relative;
+	text-align:center;
+}
+#infor-bar  ul{
+	display:inline-block;
+	width:20em;
+	margin: auto;
+	background-color:white;
+	padding: 0.2em 1em 0.2em 1em;
+	border-radius: 2em;
+}
+#infor-bar ul li h2 a{
+	font-family: SVN-Agency;
+	color:black;
+	text-decoration: none;
+	font-weight: normal;
+	font-size:1.25em;
+	opacity:0.75;
+	
+}
+#infor-bar ul li span{
+	font-family: SVN-Agency;
+	color:black;	
+	font-size:1.5em;
+	font-weight: normal;
+	opacity:0.75;
+}

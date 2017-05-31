@@ -1,0 +1,257 @@
+#content{
+	position:relative;
+	min-height:300px;
+}
+#search-bar{
+	position:relative;
+	height:100%;
+}
+#inner-search-bar{
+	position: absolute;
+	left:0;
+	right:0;
+	top: 25%;
+	width:33%;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#magnifier{
+	position:absolute;
+	width:100px;
+	height:100px;
+	margin: auto;
+	display:inline-block;
+	background-image:url('/icon/searchbar/magnifier-circle.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	z-index:2;
+}
+/*
+#magnifier:hover{
+	position:absolute;
+	width:110px;
+	height:110px;
+	margin: auto;
+	z-index:1;
+}
+*/
+#SbSgBCover{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:10px;
+	width:calc(100% - 130px);
+	height:37px;
+	margin: auto 0;
+	padding: 10px 20px 10px 100px;
+	background-color:black;
+	display:inline-block;
+	color:white;
+	border: 0px none black;
+	border-radius: 1.5em;
+	outline:none;
+	overflow-y:visible;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.5);
+	opacity:0.8;
+	z-index:1;
+}
+#search-box{
+	height:100%;
+	width:100%;
+	background-color:black;
+	color:white;
+	font-size:1.5em;
+	border:none;
+	outline:none;
+    font-family: SVN-Effa;
+	margin:0;
+	padding:0;
+	z-index:1;
+}
+#SgLBox{
+	position:relative;
+	width:100%;
+	max-height:150px;
+	top:12px;
+	background-color:black;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,0.5);	
+	outline:none;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#SgLBox a{
+	font-family: SVN-Effa;
+	margin: 0;
+	padding: 5px 10px;
+	display:block;
+	text-decoration:none;
+	background-color:black;
+	color:white;
+	font-size:1em;
+	outline:none;
+}
+/*
+#SgLBox a:hover{
+	font-family: SVN-Effa;
+	background-color:white;
+	color:black;
+}
+#SgListScrn{
+	position:absolute;
+	height:300px;
+	box-shadow: 5px 0 25px 15px rgba(0, 0, 0, 0.9);
+	padding:0em;
+	border-radius:1.5em;
+	overflow:hidden;
+	display:none;
+	-webkit-transition: opacity 1s;
+    transition: opacity 0.5s;
+}
+*/
+#SgListBG{
+	position:absolute;
+	background-color:transparent;
+	border-color:white;
+	padding:0;
+	color:black;
+	height:142.5px;
+	z-index:2;
+/*	box-shadow: 0 0 100px 50px rgba(0, 0, 0,1);
+	border-radius:1.5em; */
+}
+#SgListBG img{
+	position:absolute;
+	display:block;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	transition: all 0.5s;
+}
+/*
+#SgListBG a{
+	display:block;
+	padding:0;
+	outline:0;
+	opacity:1;
+	height:100%;
+} 
+#SgListBG a:hover{
+	opacity:1;
+	background-color:transparent;
+}
+#SgListBG a:focus{
+	opacity:1;
+	background-color:transparent;
+}
+#SgListBG a p{
+	position:relative;
+	width:100%;
+	margin-top:10px;
+	text-align:center;
+	font-family: Arial;
+	font-size:0.75em;
+	color:DodgerBlue;
+	display:none;
+}
+*/
+
+#book-description-bar{
+	position:fixed;
+	display:flex;
+	flex-flow:column;
+	top:20%;
+	max-height:100%;
+	width:30%;
+	right:-30%;
+	background-color:white;	
+	opacity:0.9;
+	border-radius:0.5em 0 0 0.5em;
+	z-index:3;
+	transition: all 1s;
+}
+#book-description-bar:hover{
+	right:0;
+}
+#book-description-title{
+	position:relative;
+	top:0;
+	margin:0;
+	padding: 1em 0;
+	text-align:center;
+	color:white;
+	opacity:0.9;
+	background-color:black;
+	width:100%;
+	font-weight:normal;
+}
+#book-description-close{
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0.25em;
+	opacity:0.9;
+	background-color:transparent;
+	color:white;
+	border:none;	
+	font-weight:bold;
+	border-radius:inherit;	
+}
+#description-bar-option{
+	position:relative;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+#description-bar-option button{
+	width:100%;
+	border:none;
+	outline:none;
+}
+#description-bar-option button:hover{
+	background-color:black;
+	color:white;
+	opacity:0.75;
+}
+#description-bar-option button:active{
+	background-color:black;
+	color:white;
+	opacity:1;	
+}
+#rent-new{
+	background-color:red;
+	color:black;
+}
+#rent-old{
+	background-color:orange;
+	color:black;
+
+}
+#buy-new{
+	background-color:lightblue;
+	color:black;
+}
+#buy-old{
+	background-color:lightgreen;
+	color:black;
+}
+#book-description{
+	position:relative;
+	color:black;
+	margin:auto;
+	flex: 2;
+	overflow-y:auto;
+}
+#description-bar-infor{
+	color:black;
+	list-style-type:none;
+}
+#description-bar-infor li h4 {
+	display:inline;
+}
+#description-bar-infor li p{
+	display:inline;
+}
