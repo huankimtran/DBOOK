@@ -1,7 +1,1 @@
-Google
-id: 1061583598684-o4lcg8ml7dc02aej3h591gu9qd237gbi.apps.googleusercontent.com 
-
-secret: 7UvPSVpl5qcqkWlKvp-kYnzE 
-
-FB
-179480999139349
+OOPs
